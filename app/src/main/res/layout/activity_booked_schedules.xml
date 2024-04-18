@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BookedSchedules">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You can book appointment by clicking on the dates you want!"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins_light"
+        android:background="@color/colorAccent"
+        />
+
+    <ListView
+        android:id="@+id/timetableListView"
+        android:layout_width="match_parent"
+        android:layout_height="584dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/background2" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_back"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Back"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bt_round"/>
+
+</LinearLayout>

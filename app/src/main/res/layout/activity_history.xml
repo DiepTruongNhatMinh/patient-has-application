@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".History">
+
+    <!-- Group 1 -->
+    <RelativeLayout
+        android:id="@+id/group1Container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <!-- First TextView -->
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Completed Appointment"
+            android:background="@color/green"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="18sp"/>
+
+        <!-- First ListView -->
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/teal_200"
+            android:layout_below="@id/textView1"
+            android:layout_marginTop="8dp"/>
+    </RelativeLayout>
+
+    <!-- Group 2 -->
+    <RelativeLayout
+        android:id="@+id/group2Container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/group1Container"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <!-- Second TextView -->
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Canceled Appointment"
+            android:background="@color/colorPrimaryDark"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="18sp"/>
+
+        <!-- Second ListView -->
+        <ListView
+            android:id="@+id/listView2"
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@id/textView2"
+            android:layout_marginTop="8dp"/>
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_back"
+        android:layout_width="140dp"
+        android:layout_height="52dp"
+        android:layout_below="@id/group2Container"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginBottom="57dp"
+        android:background="@drawable/bt_round"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Back to home"
+        android:textColor="@color/white" />
+</RelativeLayout>
